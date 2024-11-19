@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item {
+            flex: 1 1 calc(25% - 10px);
+            margin: 5px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery">
+    <!-- Gallery items -->
+    <div class="gallery-item">
+        <a href="\HTML_CSS\Images\che.jfif" target="_blank">
+            <img src="/HTML_CSS/Images/che.jfif" alt="Image 1">
+        </a>
+    </div>
+    <div class="gallery-item">
+        <a href="image2.jpg" target="_blank">
+            <img src="image2.jpg" alt="Image 2">
+        </a>
+    </div>
+    <div class="gallery-item">
+        <a href="image3.jpg" target="_blank">
+            <img src="image3.jpg" alt="Image 3">
+        </a>
+    </div>
+    <div class="gallery-item">
+        <a href="image4.jpg" target="_blank">
+            <img src="image4.jpg" alt="Image 4">
+        </a>
+    </div>
+    <!-- Add more images as needed -->
+</div>
+
+</body>
+</html>

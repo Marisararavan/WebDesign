@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.gallery {
+          border: 1px solid #ccc;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #e7eb0c;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .responsive {
+          padding: 0 5px;
+          float: left;
+          width:25%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 50%;
+            margin: 6px 0;
+          }
+        }
+        
+        @media only screen and (max-width: 500px) {
+          .responsive {
+            width: 100%;
+          }
+        }
+        
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2> Image Gallery</h2>
+        
+        <h4>Indian Hills Views</h4>
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="/HTML_CSS/Images/img1.avif">
+              <img src="/HTML_CSS/Images/img1.avif" alt="Cinque Terre" style="width: 600;height: 400;">
+            </a>
+            <div class="desc">This is biigest Hill in india</div>
+          </div>
+        </div>
+        
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="/HTML_CSS/Images/img2.avif">
+              <img src="/HTML_CSS/Images/img2.avif" alt="Forest"style= "width:600; height=400;">
+            </a>
+            <div class="desc">This is a smllest hiil in india</div>
+          </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="/HTML_CSS/Images/img3.webp">
+              <img src="/HTML_CSS/Images/img3.webp" alt="Northern Lights" style="width:600;height:400 ;">
+            </a>
+            <div class="desc">This Hill station locate in OOTY</div>
+          </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="/HTML_CSS/Images/img4.webp">
+              <img src="img4.webp" alt="Mountains" style="width:600; height:400;">
+            </a>
+            <div class="desc">This is locate in thoothukudi</div>
+          </div>
+        </div>
+        
+        <div class="clearfix"></div>
+        
+        <div style="padding:6px;">
+          <p>A hill is a piece of land that rises higher than everything surrounding it. It looks like a little bump in the Earth. Since they are higher than everything around them, hills are good places to get a nice view. Hills are easier to climb than mountains. They are less steep and not as high.</p>
+        </div>
+        
+        </body>
+        </html>
+        
+        
+        
+</body>
+</html>
