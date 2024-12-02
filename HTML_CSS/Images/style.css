@@ -1,0 +1,53 @@
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+li,h1,ul{
+    display: inline;
+    
+}
+ul{
+    margin-left: 75%;
+    color: gray;
+    cursor: pointer;
+}
+li:hover{
+    color: white;
+}
+input{
+    width: 60%;
+    padding: 15px;
+    font-size: large
+}
+.serach{
+    text-align: center;
+    padding: 25px;
+}
+.box{
+    border: color black;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    width: 220px;
+}
+p:hover{
+    color: black;
+}
+.box:hover{
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+.Products{
+    text-align: center;
+    padding: 20px 12px;
+
+}
+.box-2{
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 15px;
+   
+}
