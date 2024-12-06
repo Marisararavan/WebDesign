@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #232f3e;
+            color: white;
+            padding: 10px 20px;
+        }
+        .navbar .left, .navbar .right {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .left a, .navbar .right a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 14px;
+        }
+        .navbar .search-bar {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+        .navbar .search-bar input {
+            width: 100%;
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+        }
+        .navbar .search-bar button {
+            padding: 5px 10px;
+            background-color: #febd69;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+       .carousel-inner{
+        height: 250px;
+       }
+       .container{
+  
+        width: 100%;
+        height: 50%;
+        padding: 20px 10px;
+        margin: 10px;
+        padding-bottom: 5px;
+        cursor: pointer;
+       }
+       body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+}
+
+.box p {
+  margin: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.explore-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+}
+
+.explore-link:hover {
+  text-decoration: underline;
+}
+.search-bar{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+        </style>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>   
+        
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <div class="logo">Amazon</div>
+            <a href="#">All</a>
+            <a href="#">Fresh</a>
+            <a href="#">Best Sellers</a>
+            <a href="#">Mobiles</a>
+            <a href="#">Customer Service</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Amazon.in">
+            <button>Search</button>
+        </div>
+        <div class="right">
+            <a href="#">Account & Lists</a>
+            <a href="#">Returns & Orders</a>
+            <a href="#">Cart</a>
+        </div>
+    </div>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+
+        </div>
+        
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="a1.jpg" alt="Los Angeles" class="d-block" style="width:100% ;height: 500px;">
+          </div>
+          <div class="carousel-item">
+            <img src="a2.jpg" alt="Chicago" class="d-block" style="width:100%;height: 500px;">
+          </div>
+          <div class="carousel-item">
+            <img src="a3.jpg" alt="New York" class="d-block" style="width:100% ;height: 500px;">
+          </div>
+          <div class="carousel-item">
+            <img src="a4.jpg" alt="New" class="d-block" style="width:100% ;height: 500px;">
+          </div>
+          <div class="carousel-item">
+            <img src="a5.jpg" alt=" York" class="d-block" style="width:100% ;height: 500px;">
+          </div>
+          <div class="carousel-item">
+            <img src="k1.jpg" alt=" York" class="d-block" style="width:100% ;height: 500px;">
+          </div>
+        </div>
+        
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      
+      
+
+     <div class="container">
+      <h1>Explore more from Small Businesses</h1>
+      <div class="grid">
+      <div class="box">
+        <img src="i2.jpg" alt="Ethnic dresses" />
+        <p>Ethnic, dresses & more</p>
+      </div>
+      <div class="box">
+        <img src="i3.jpg" alt="Decor" />
+        <p>Décor</p>
+      </div>
+      <div class="box">
+        <img src="i4.jpg" alt="Fashion accessories" />
+        <p>Fashion accessories</p>
+      </div>
+      <div class="box">
+        <img src="i5.jpg" alt="Glassware & drinkware" />
+        <p>Glassware & drinkware</p>
+      </div>
+     </div>
+     <a href="https://www.amazon.in/ref=nav_logo#" target="_blank" class="explore-link">Explore all</a>
+    </div>
+    <div class="container-fluid mt-3">
+        <h3>Welcome To Amazon</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsa sapiente repellendus, facilis rerum quis? A consequuntur facilis dolor non corporis maxime ipsam, in sit voluptatibus vel reprehenderit molestias et?</p>
+      </div>
+    <script>
+        document.querySelectorAll('.box').forEach(box => {
+  box.addEventListener('click', () => {
+    alert('You clicked on ' + box.querySelector('p').textContent);
+  });
+});
+    </script>
+</body>
+</html>
+    
