@@ -54,6 +54,7 @@
         }
        .carousel-inner{
         height: 250px;
+        
        }
        .container{
   
@@ -124,7 +125,50 @@ h1 {
 .search-bar{
     border: 1px solid black;
     border-radius: 20px;
+    width: 30px;
 }
+.logo{
+  display: flex;
+  height: 1cm;
+  width: 20px;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination {
+    display: flex; /* Flexbox to align items */
+    justify-content: center; /* Center the items horizontally */
+    list-style: none; /* Remove bullets */
+    padding: 10px 0;
+    margin: 20px 0; /* Add spacing above and below */
+}
+
+.pagination a {
+    display: block;
+    padding: 10px 15px; /* Adjust padding for size */
+    margin: 0 5px; /* Spacing between items */
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Blue text color */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+.pagination a:hover {
+    background-color: #007bff; /* Change background on hover */
+    color: white; /* White text on hover */
+    border-color: #007bff; /* Match hover background color */
+}
+
+.pagination a.active {
+    background-color: #007bff; /* Active page color */
+    color: white;
+    border-color: #007bff;
+}
+
 
         </style>
         
@@ -136,11 +180,12 @@ h1 {
 <body>
     <div class="navbar">
         <div class="left">
-            <div class="logo">Amazon</div>
+            <div class="logo">
+              <img src="ama1.png">
+            </div>
             <a href="#">All</a>
             <a href="#">Fresh</a>
-            <a href="#">Best Sellers</a>
-            <a href="#">Mobiles</a>
+          
             <a href="#">Customer Service</a>
         </div>
         <div class="search-bar">
@@ -225,7 +270,66 @@ h1 {
         <h3>Welcome To Amazon</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsa sapiente repellendus, facilis rerum quis? A consequuntur facilis dolor non corporis maxime ipsam, in sit voluptatibus vel reprehenderit molestias et?</p>
       </div>
+      
+      <div class="pagination">
+        <a href="#" onclick="changePage('prev')">&laquo;</a>
+        <a href="#" class="page" onclick="changePage(1)">1</a>
+        <a href="#" class="page" onclick="changePage(2)">2</a>
+        <a href="#" class="page" onclick="changePage(3)">3</a>
+        <a href="#" class="page" onclick="changePage(4)">4</a>
+        <a href="#" class="page" onclick="changePage(5)">5</a>
+        <a href="#" class="page" onclick="changePage(6)">6</a>
+        <a href="#" class="page" onclick="changePage(7)">7</a>
+        <a href="#" onclick="changePage('next')">&raquo;</a>
+    </div>
+    
+    <div id="content" class="content">
+        <!-- Content will be updated dynamically -->
+        <p>Page content will appear here.</p>
+    </div>
+    
     <script>
+      const totalPages = 7; // Total number of pages
+let currentPage = 1; // Initially display page 1
+
+// Function to change page
+function changePage(page) {
+    const pageLinks = document.querySelectorAll('.pagination .page');
+
+    // Handle 'prev' and 'next' navigation
+    if (page === 'prev' && currentPage > 1) {
+        page = currentPage - 1;
+    } else if (page === 'next' && currentPage < totalPages) {
+        page = currentPage + 1;
+    } else if (typeof page !== 'number') {
+        return; // Do nothing if page is invalid
+    }
+
+    // Update current page
+    currentPage = page;
+
+    // Update page content
+    updateContent();
+
+    // Highlight the active page
+    pageLinks.forEach((link, index) => {
+        if (index + 1 === currentPage) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+}
+
+// Function to update content dynamically
+function updateContent() {
+    const content = document.getElementById('content');
+    content.innerHTML = `<p>You are viewing content for page ${currentPage}.</p>`;
+}
+
+// Initialize first page
+changePage(currentPage);
+
         document.querySelectorAll('.box').forEach(box => {
   box.addEventListener('click', () => {
     alert('You clicked on ' + box.querySelector('p').textContent);

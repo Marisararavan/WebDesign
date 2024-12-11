@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nch = parseInt(prompt("Enter the number of classes held:"));
+        var nca = parseInt(prompt("Enter the number of classes attended:"));
+        var p = (nca / nch) * 100;
+    
+        document.write("Your percentage is = " + p + " %<br>");
+    
+        if (p < 75) {
+            document.write("Student not allowed in exam hall");
+        } else if (p >= 75) {
+            document.write("Student allowed in exam hall");
+        }
+    </script>
+    
+
+    
+</body>
+</html>
