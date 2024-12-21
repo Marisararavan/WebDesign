@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fact(x) {
+            var f = 1;
+            for (var i = 1; i <= x; i++) {
+                f = f * i;
+            }
+            return f; 
+        }
+    
+        function permutation(n, r) {
+            return fact(n) / fact(n - r); 
+        }
+    
+        function combination(n, r) {
+            return permutation(n,r)/fact(r)
+        }
+    
+        function seacond() {
+            var result = fact(5);
+            var result1 = permutation(5, 3);
+            var result2 = combination(5, 3); 
+            document.write("factorial is "+result,"permutation is"+result1,"combination is"+result2)
+        }
+    </script>
+    
+    <button type="button" onclick="seacond()">Click me</button>
+    
+</body>
+</html>

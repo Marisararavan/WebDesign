@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ams(){
+        var max = parseInt(prompt("enter a number"));
+        var exp;
+        var num = 1; 
+
+        while (num <= max) {
+            var temp = num;
+            var sum = 0;
+            exp = num.toString().length;
+            while (temp > 0) {
+                var digit = temp % 10;
+                sum += Math.pow(digit, exp);
+                temp = Math.floor(temp / 10);
+            }
+
+            
+            if (num < 10 || sum === num) {
+                document.write(num + "<br>");
+            }
+            num++;
+        }
+        }
+    </script>
+    <button type="button" onclick="ams()">click mee</button>
+</body>
+</html>11

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addnumber(){
+           var x=parseInt(prompt("enter a number"))
+           var y=parseInt(prompt("enter a value y"))
+           var z=x+y;
+           document.write(z);
+        }
+        function subnumber(){
+           var x=parseInt(prompt("enter a number"))
+           var y=parseInt(prompt("enter a value y"))
+           var z=x-y;
+           document.write(z);
+        }
+        function multinumber(){
+           var x=parseInt(prompt("enter a number"))
+           var y=parseInt(prompt("enter a value y"))
+           var z=x*y;
+           document.write(z);
+        }
+        function divnumber(){
+           var x=parseInt(prompt("enter a number"))
+           var y=parseInt(prompt("enter a value y"))
+           var z=x/y;
+           document.write(z);
+        }
+
+    </script>
+    <button type="button" onclick="addnumber()">click to add</button><br>
+    <button type="button" onclick="subnumber()">click to sub</button><br>
+    <button type="button" onclick="multinumber()">click to multinumber</button><br>
+    <button type="button" onclick="divnumber()">click to division</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function prime(){
+        var num = parseInt(prompt("Enter a number to check if it is a prime number: "));
+        var isPrime = num > 1;
+
+            for (var i = 2; i <= Math.sqrt(num); i++) {
+              if (num % i === 0) {
+              isPrime = false;
+               break;
+              }
+           }
+        
+       document.write(isPrime ? num + " is a prime number." : num + " is not a prime number.");
+        }
+    </script>
+    <button type="button" onclick="prime()">click me</button>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function rev(){
+        var num=parseInt(prompt("enter a numbers"))
+        rev=0
+       while(num!==0){
+        r=num%10
+        rev=rev*10+r
+        num=Math.floor(num/10);
+       }
+       document.write("Reversed number is: " + rev)
+    }
+    </script>
+    <button type="button" onclick="rev()">click mee</button>
+</body>
+</html>
